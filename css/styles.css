@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+.container {
+    background-color: beige;
+    border-radius: 8px;
+    height: 260px;
+    width: 400px;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.175);
+}
+
+.container.active {
+    height: 550px;
+}
+
+#qr-header {
+    text-align: center;
+}
+
+#qr-header h1{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.175);
+    margin-bottom: 1.4rem;
+    color: #444;
+}
+
+#qr-header p {
+    color: #444;
+    font-size: 1.2rem;
+}
+
+#qr-form {
+    margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+}
+
+#qr-form input {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+#qr-form button {
+    background-color: rgb(94, 189, 157);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    opacity: 0.7;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.175);
+    cursor: pointer;
+}
+
+#qr-form button:hover {
+    opacity: 1;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#qr-code {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 30px 0;
+    margin: 15px 20px;
+    transition: 0.4s;
+}
+
+#qr-code img {
+    width: 170px;
+}
+
+.container.active #qr-code {
+    opacity: 1;
+}
