@@ -13,13 +13,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 94vh;
     background-color: aquamarine;
 }
 
 .container {
     background-color: beige;
     border-radius: 8px;
+    min-height: 260px;
     height: 260px;
     width: 400px;
     padding: 2rem;
